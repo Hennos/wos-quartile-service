@@ -1,3 +1,6 @@
+#IDEA directory
+.vcode
+
 # Logs
 logs
 *.log
@@ -59,3 +62,6 @@ typings/
 
 # next.js build output
 .next
+
+#xlsx files for test
+*.xlsx
