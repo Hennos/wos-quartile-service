@@ -14,9 +14,8 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
 
-app.use(quartiles(path.join(__dirname, "wos_collection.xlsx")));
+app.use(quartiles(path.join(__dirname, "data", "collection.xlsx")));
 
 app.use("/", indexRouter);
 app.use("/quartiles", quartilesRouter);
